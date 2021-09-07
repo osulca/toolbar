@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 Uri sitio = Uri.parse("http://www.udh.edu.pe/");
                 Intent intentItem1 = new Intent(Intent.ACTION_VIEW, sitio);
                 startActivity(intentItem1);
+                Toast.makeText(getApplicationContext(), "Hola", Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.item2:
                 Intent intentItem2 = new Intent(getApplicationContext(), MainActivity2.class);
